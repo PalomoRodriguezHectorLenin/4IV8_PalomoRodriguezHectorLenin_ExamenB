@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author lenin
  */
-public class serRegistro extends HttpServlet {
+public class Registro extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -31,13 +31,17 @@ public class serRegistro extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try ( PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
+            String fecha = "";
+            
+            fecha = request.getParameter("fecha");
+            
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
             out.println("<title>Servlet serRegistro</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet serRegistro at " + request.getContextPath() + "</h1>");
+            out.println("<h1>La fecha de registro es:"+fecha+"</h1>");
             out.println("</body>");
             out.println("</html>");
         }

@@ -2,11 +2,19 @@
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
     <servlet>
         <servlet-name>serRegistro</servlet-name>
-        <servlet-class>serRegistro.serRegistro</servlet-class>
+        <servlet-class>serRegistro</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Registro</servlet-name>
+        <servlet-class>serRegistro.Registro</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>serRegistro</servlet-name>
         <url-pattern>/serRegistro</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Registro</servlet-name>
+        <url-pattern>/Registro</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
